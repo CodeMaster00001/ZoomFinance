@@ -1,20 +1,26 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { SiMoneygram } from "react-icons/si";
 import { MdMenu } from "react-icons/md";
 import { FaUserAlt } from "react-icons/fa";
 import SideBar from "./SideBar";
 import FDInfo from '../components/FDInfo';
+import logo from "../images/logo.png";
 
 function NavBar() {
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
+
 
   const handleShow = () => {
     setShow(!show);
   };
   
-  
+  const handleSearchButton = (e)=>{
+    e.preventDefault();
+    navigate("/FormSubmission");
+  }
 
   useEffect(() => {
     if (show) {
@@ -32,10 +38,19 @@ function NavBar() {
     <>
       <nav className="w-full flex lg:flex-row justify-between items-center font-semibold px-3 lg:px-20 bg-blue-300 h-14 z-40 fixed">
         <div className="flex justify-start gap-1 items-center">
-          <h1 className="text-blue-700 font-extrabold lg:text-lg text-sm">
-            ZOOM FINANCE
-          </h1>
-          <SiMoneygram style={{ color: "white", fontSize: "20" }} />
+        <NavLink
+        to="/"
+        style={(e) => ({ color: e.isActive ? "black" : " " })}
+        className="flex items-center"
+      >
+        <img className="h-6 w-6 mr-2" src={logo} alt="Logo" />
+        <h1 className="text-blue-700 font-extrabold lg:text-lg text-sm mr-2">
+          ZOOM FINANCE
+        </h1>
+        
+      </NavLink>
+          
+          
         </div>
         <div className="hidden lg:flex lg:flex-row gap-4 text-white font-medium">
           <NavLink
@@ -70,15 +85,18 @@ function NavBar() {
           </NavLink>
         </div>
         <div className="flex flex-row justify-between items-center gap-5">
+        {/* Search BAR */}
           <div className="hidden lg:flex flex-row items-center">
             <input
               type="text"
               className="h-[38px] rounded-l-full font-medium outline-none px-4"
-              placeholder="Search for Loan"
+              placeholder="Search Loans..."
             />
             <button
+            onClick={handleSearchButton}
               type="submit"
-              className="items-center bg-black p-1.5 rounded-r-full"
+              className="items-center bg-black p-1.5 rounded-r-full "
+              
             >
               <CiSearch style={{ color: "white", fontSize: "26" }} />
             </button>

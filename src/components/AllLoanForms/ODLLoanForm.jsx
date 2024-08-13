@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import odl from "/harshit study/google/bank/zoomfinance/ZOOMFIN-master/src/images/draft.png"
 function ODLLoanForm() {
   const [agree, setAgree] = useState(false);
   const handleTermsAndCondition = () => {
@@ -121,9 +121,9 @@ function ODLLoanForm() {
   <div class="bg-white shadow-lg rounded-lg py-6 px-3 lg:px-20">
     <div class="flex flex-col lg:flex-row items-center lg:space-x-10">
       {/* <!-- Image Section --> */}
-      <div data-aos="fade-right" class="mb-6 lg:mb-0">
+      <div data-aos="fade-right" class="w-full lg:w-60 lg:h-58 mb-6 lg:mb-0">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3xibfAtx53snXTsGJjXO7Qt0vuxXC8-9pPA&s"
+          src={odl}
           alt="Overdraft Loan"
           class="w-full lg:w-96 rounded-lg shadow-md"
         />
@@ -131,7 +131,7 @@ function ODLLoanForm() {
 
       {/* <!-- Text Section --> */}
       <div data-aos="fade-left" class="text-center lg:text-left overflow-hidden flex flex-col gap-1 justify-center items-center lg:items-start lg:justify-start">
-        <h2 class="text-2xl font-bold mb-4">About Overdraft Loan</h2>
+        <h2 class="text-2xl font-bold mb-4">About Overdraft Limit</h2>
         <p class="text-gray-700 mb-4 text-justify">
           An overdraft loan is a flexible borrowing option that allows you to withdraw more money from your bank account than you have, up to an approved limit. It acts as a short-term loan to cover unexpected expenses or manage cash flow, providing you with immediate access to funds when needed.
         </p>

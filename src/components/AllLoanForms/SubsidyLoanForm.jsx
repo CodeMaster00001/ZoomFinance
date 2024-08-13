@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import msme from "/harshit study/google/bank/zoomfinance/ZOOMFIN-master/src/images/MSME.png"
 
 function SubsidyLoanForm() {
   const [agree, setAgree] = useState(false);
@@ -112,9 +113,9 @@ function SubsidyLoanForm() {
   <div class="bg-white shadow-lg rounded-lg py-6 px-3 lg:px-20">
     <div class="flex flex-col lg:flex-row items-center lg:space-x-10">
       {/* <!-- Image Section --> */}
-      <div data-aos="fade-right" class="mb-6 lg:mb-0">
+      <div data-aos="fade-right" class="w-full lg:w-60 lg:h-58 mb-6 lg:mb-0">
         <img
-          src="https://cms-article.forbesindia.com/media/images/2023/Sep/img_219231_homeloan_shutterstock_1279322677_bg.jpg"
+          src={msme}
           alt="Subsidy Loan"
           class="w-full lg:w-96 rounded-lg shadow-md"
         />
@@ -122,12 +123,12 @@ function SubsidyLoanForm() {
 
       {/* <!-- Text Section --> */}
       <div data-aos="fade-left" class="text-center lg:text-left overflow-hidden flex flex-col gap-1 justify-center items-center lg:items-start lg:justify-start">
-        <h2 class="text-2xl font-bold mb-4">About Subsidy Loan</h2>
+        <h2 class="text-2xl font-bold mb-4">About MSME Loan</h2>
         <p class="text-gray-700 mb-4 text-justify">
-          A subsidy loan is a financial product designed to provide assistance to individuals or businesses by offering reduced interest rates or partial loan forgiveness through government support. These loans are often targeted at sectors such as agriculture, education, and small businesses to encourage growth and development.
+        MSME loans in India support Micro, Small, and Medium Enterprises with financial needs like working capital and expansion. They cater to businesses with specific investment and turnover limits, offering flexible terms and favorable interest rates to promote growth, modernization, and infrastructure development within these sectors.
         </p>
         <p class="text-gray-700 text-justify">
-          Subsidy loans offer numerous benefits including lower borrowing costs, longer repayment terms, and the ability to access funding that might otherwise be unavailable. They are a valuable tool for fostering economic growth and supporting those who need financial assistance the most.
+        MSME loans also provide various government-backed schemes and subsidies, making them more accessible and affordable. They play a crucial role in boosting the economy by fostering entrepreneurship and creating job opportunities in diverse sectors.
         </p>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPBGEoAj7ZXBvjk0T2n-RtRXW1xrRiswiuIaqIGdCC0EEZ2g/viewform?usp=sf_link" className="bg-blue-400 hover:bg-white hover:text-blue-500 border hover:border-blue-500 duration-500 text-white px-4 py-2 rounded-sm mt-5 w-full lg:w-28">Apply Now</a>
       </div>

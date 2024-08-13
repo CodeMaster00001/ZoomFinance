@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
           <div className="flex space-x-4">
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/zoomfinance9/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white"
@@ -23,7 +23,7 @@ const Footer = () => {
               <FaInstagram size={24} />
             </a>
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/profile.php?id=61563941941368"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white"
@@ -39,7 +39,7 @@ const Footer = () => {
               <FaWhatsapp size={24} />
             </a>
             <a
-              href="https://t.me/[username]"
+              href="https://t.me/zoomnidhifinance"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white"

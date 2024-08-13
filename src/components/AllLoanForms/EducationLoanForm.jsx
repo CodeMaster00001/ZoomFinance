@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import education from "/harshit study/google/bank/zoomfinance/ZOOMFIN-master/src/images/education.webp"
 
 function EducationLoanForm() {
   const [agree, setAgree] = useState(false);
@@ -151,9 +152,9 @@ function EducationLoanForm() {
   <div class="bg-white shadow-lg rounded-lg py-6 px-3 lg:px-20">
     <div class="flex flex-col lg:flex-row items-center lg:space-x-10">
       {/* <!-- Image Section --> */}
-      <div data-aos="fade-right" class="mb-6 lg:mb-0">
+      <div data-aos="fade-right" class="w-full lg:w-60 lg:h-58 mb-6 lg:mb-0">
         <img
-          src="https://www.avanse.com/blogs/images/blog-18.jpg"
+          src={education}
           alt="Education Loan"
           class="w-full lg:w-96 rounded-lg shadow-md"
         />

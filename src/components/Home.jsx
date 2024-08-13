@@ -4,15 +4,25 @@ import SubNavBar from "./SubNavBar";
 import { HiArrowCircleUp } from "react-icons/hi";
 import WhyUsSection from "./WhyUsSection";
 import { useNavigate } from "react-router-dom";
-
-
+import personal from "../images/personal.jpg"
+import home from "../images/home.jpg"
+import business from "../images/business.jpg"
+import education from "../images/education.webp"
+import car from "../images/car.webp"
+import oldcar from "../images/oldcar.jpg"
+import MSME from "../images/MSME.png"
+import property from "../images/property.webp"
+import credit from "../images/credit.jpg"
+import mudra from "../images/mudra.png"
+import draft from "../images/draft.png"
+import fd from "../images/fd.jpg"
+import BanksMarquee from "./BanksMarquee";
 
 function Home() {
   const typesOfLoansCardData = [
     // Personal Loan
     {
-      image:
-        "https://images.news18.com/ibnlive/uploads/2024/01/news18-bl-zb-2024-01-4fe9a2440d19ff7c57f54bbcbf082503-3x2.jpg",
+      image:personal,
       title: "Personal Loan",
       description:
         "A personal installment loan is a type of loan where you borrow a sum of money and must pay it back in fixed amounts called “installments.”",
@@ -22,7 +32,7 @@ function Home() {
     // Home Loan
     {
       image:
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2017-08/18/full/1502995406-2851.jpg",
+        home,
       title: "Home Loan",
       description:
         "A Home Loan allows you to claim income tax deductions on the interest and principal amount due. Under the Income Tax Act, 1961, as per Section 80C, you can claim up to INR 1.5 lakh on principal repayments, and up to INR 2 lakh on interest repayments under Section 24B.",
@@ -32,7 +42,7 @@ function Home() {
     // Business Loan
     {
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT2jpXdppm065fQLdmnLmdMG6vIcTlPt99Iw&s",
+        business,
       title: "Business Loan",
       description:
         "Those whose business has been profit-making for the previous 2 years. The business should have a Minimal Annual Income (ITR) of ₹1.5 lakhs per annum. The applicant should be at least 21 years at the time of applying for the loan, and should be not older than 65 years at the time of loan maturity",
@@ -42,7 +52,7 @@ function Home() {
     // Education Loan
     {
       image:
-        "https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/education-loan/education-loan-india-benefits-interest-rate-717x404.jpg",
+        education,
       title: "Education Loan",
       description:
         "Quick approval. Minimal documentation.An education loan is a sum of money borrowed to finance post-secondary education or higher education-related expenses. Education loans are intended to cover the cost of tuition, books and supplies, and living expenses while the borrower is in the process of pursuing a degree.",
@@ -52,7 +62,7 @@ function Home() {
     // Car Loan
     {
       image:
-        "https://www.finnable.com/wp-content/uploads/2022/01/Instant-car-loan.jpg",
+       car,
       title: "Car Loan",
       description:
         "Finance options for wide range of cars. Attractive interest rates. Tailor-made finance schemes.",
@@ -61,7 +71,7 @@ function Home() {
     },
     // Old Car Purchase
     {
-      image: "https://delhicarloan.com/assets/images/CarRefinance1.jpg",
+      image: oldcar,
       title: "Old Car Purchase",
       description:
         "Before approving a used car loan application, lenders consider the age of the car and whether the model has been discontinued. The sum of the age of the car and the loan tenure of a used car loan must not exceed more than 8-10 years. The older the car, the harder it is to obtain sufficient funding to purchase the car.",
@@ -71,17 +81,17 @@ function Home() {
     // Subsidy Loan
     {
       image:
-        "https://cms-article.forbesindia.com/media/images/2023/Sep/img_219231_homeloan_shutterstock_1279322677_bg.jpg",
-      title: "Subsidy Loan",
+        MSME,
+      title: "MSME Loan",
       description:
-        "A subsidy loan is a type of financial assistance provided by the government to promote the growth of businesses in various sectors. These loans are offered at reduced interest rates, and a portion of the interest rate is subsidised by the government, making the overall cost of the loan more affordable for the borrower",
+        "MSME loans also provide various government-backed schemes and subsidies, making them more accessible and affordable. They play a crucial role in boosting the economy by fostering entrepreneurship and creating job opportunities in diverse sectors.",
       navigateTo: "https://docs.google.com/forms/d/e/1FAIpQLSfPBGEoAj7ZXBvjk0T2n-RtRXW1xrRiswiuIaqIGdCC0EEZ2g/viewform?usp=sf_link",
       knowMore: "/FormSubmission/SubsidyLoanForm"
     },
     // Property Loan
     {
       image:
-        "https://electronicafinance.com/wp-content/uploads/2023/02/taking-loan-against-property.webp",
+        property,
       title: "Property Loan",
       description:
         "A type of loan facility availed by individuals and businesses against the mortgage of a commercial or residential property. It is a secured loan, where the borrower pledges the property as collateral against the loan amount.",
@@ -91,8 +101,8 @@ function Home() {
     // Credit Card Loan
     {
       image:
-        "https://lendingplate.com/blog/wp-content/uploads/2023/12/Personal-Loan-vs.-Credit-Cards-Loan.jpg",
-      title: "Credit Card Loan",
+        credit,
+      title: "Credit Card",
       description:
         "A credit card comes with a specified pre-approved credit limit, which can be used by the holder in a month. However, if you are in urgent need of cash, most banks offer you the facility of loans against a credit card. Here, you can take a loan against the credit limit which you have been given.",
       navigateTo: "https://docs.google.com/forms/d/e/1FAIpQLSeFFG7LEShXQzAnfJfZ6m6CKB8UoHMnatVJRdJwT9SsagZ_kw/viewform?usp=sf_link",
@@ -101,7 +111,7 @@ function Home() {
     // Mudra Loan
     {
       image:
-        "https://loanduniya.weebly.com/uploads/1/2/7/5/127554603/mudra-loan_orig.png",
+       mudra,
       title: "Mudra Loan",
       description:
         "Eligibility : Any Indian Citizen who has a business plan for a non-farm income generating activity such as manufacturing, processing, trading or service sector whose credit need is up to 10 lakh can approach either a Bank, MFI or NBFC for availing of MUDRA loans under PMMY.",
@@ -111,8 +121,8 @@ function Home() {
     // Over Drafting Loan
     {
       image:
-        "https://shamisgentile.com/wp-content/uploads/2022/08/overdraft-protection.png",
-      title: "Over Drafting Loan",
+        draft,
+      title: "Over Drafting Limit",
       description:
         "An Overdraft is a flexible form of borrowing that allows businesses to withdraw funds from their Current Account up to a pre-approved limit. Interest is only charged on the amount overdrawn for the period of borrowing, making it a cost-effective way to manage short-term cash flow.",
       navigateTo: "https://docs.google.com/forms/d/e/1FAIpQLSf88yOVkpZFDvUtcM5mXA6l75ye-z1qJt_SJFaMNzG16D9w-Q/viewform?usp=sf_link",
@@ -121,11 +131,11 @@ function Home() {
     // Fixed Deposit Loan
     {
       image:
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4i0IQ4V6ZMLmcav9fx_UHlc2UvMAQbjdCbr7IA4oNj3b8JNfgHQHUl7tAp9bWOuXkly1TmdKweEmCX_t6obSe-rapxp25i2tjJLx2UJN_PdkuS6EqppBpjty_-w8kMoXBCpVEVXq7VY06/s1600/Fixed-Deposits.jpg",
+        fd,
       title: "Fixed Deposit Loan",
       description:
         "Quick approval. Minimal documentation.a type of secured loan where customers can pledge their fixed deposit as security and get a loan in return. The amount of the loan depends on the FD deposit amount. This can go up to 90% – 95% of the deposit amount.",
-      navigateTo: "https://docs.google.com/forms/d/e/1FAIpQLSehvyCYrY7Zqxy0Os5SuZPUNHr0ppiFL3cNiVJzDZ6pt6cIug/viewform?usp=sf_link",
+      navigateTo: "https://docs.google.com/forms/d/e/1FAIpQLSehff_2kFrBZ3LTFfSU1Pp8DyHK9P53qa4jYCtigPWrzA6wJg/viewform?usp=sf_link",
       knowMore: "/FormSubmission/FixedDepositLoanForm"
     },
   ];
@@ -134,6 +144,7 @@ function Home() {
     
     <>
       <SubNavBar />
+      {/* Hero Section */}
       <div className="relative h-[300px] lg:h-[450px] w-full bg-cover bg-center bg-[url('https://cdnblog.etmoney.com/wp-content/uploads/2021/12/best-practices-for-home-loans.jpg')] bg-no-repeat">
         <div className="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent  flex flex-col gap-3 items-center justify-center">
           <h1 data-aos="fade-up" className="text-white font-bold text-wrap text-3xl lg:text-4xl items-center line-clamp-4">
@@ -177,6 +188,11 @@ function Home() {
           ))}
         </div>
       </section>
+
+      {/* Our Partners  */}
+      <section className="px-3 lg:px-20" id="Partners">
+        <BanksMarquee/>  
+      </section>
       {/* Connect Us Section */}
       <h1 className="text-center text-xl font-bold my-2" data-aos="fade-in">Connect with Us</h1>
       <section className="py-12 bg-white relative">
@@ -196,7 +212,7 @@ function Home() {
                 services. Locate your nearest branch or an ATM.
               </p>
               <a
-                href="#"
+                href="https://www.google.com/maps/dir//Industry+House+Business+Centre+Industry+House+15,+AB+Rd,+New+Palasia+Indore,+Madhya+Pradesh+452001/@22.7280049,75.8879414,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3962fd6d5c629411:0x4f30b32ad0c8b0f1!2m2!1d75.8879414!2d22.7280049?entry=ttu"
                 className="text-red-600 font-semibold hover:underline"
               >
                 Locate now &rarr;
@@ -217,7 +233,7 @@ function Home() {
                 urgent resolution
               </p>
               <a
-                href="#"
+                href="tel:07314999628"
                 className="text-red-600 font-semibold hover:underline"
               >
                 Find out more &rarr;
@@ -238,7 +254,7 @@ function Home() {
                 we'll get back to you
               </p>
               <a
-                href="#"
+                href="mailto: zoomfinanceindore@gmail.com"
                 className="text-red-600 font-semibold hover:underline"
               >
                 Click here &rarr;

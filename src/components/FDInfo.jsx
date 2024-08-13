@@ -59,7 +59,7 @@ const FDInfo = () => {
         </div>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSevCRpTae909GA6rlZsGebKsO2uPhOtJhgz1TZJh-fF632NPQ/viewform?usp=sf_link">
         <div className='flex items-center justify-center overflow-hidden  '>
-        <button data-aos="zoom-in" className='w-[100%] bg-green-400 hover:bg-green-500 hover:scale-95 duration-300  rounded-xl text-center text-white h-10 font-bold text-lg'>OPEN FD</button>
+        <button data-aos="zoom-in" className='w-full lg:w-[10%] bg-green-400 hover:bg-green-500 hover:scale-95 duration-300  rounded-xl text-center text-white h-10 font-bold text-lg '>OPEN FD</button>
         </div></a>   
       </div>
     </div>

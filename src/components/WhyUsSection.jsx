@@ -12,7 +12,7 @@ function WhyUsSection() {
     <>
       <section className="py-12 bg-white">
         <div className="container mx-auto px-3 lg:px-20 text-center">
-          <h2 className="text-2xl font-bold text-black mb-12">Why Us?</h2>
+          <h2 className="text-2xl font-bold text-black mb-12">Why Choose Us?</h2>
           <div className="whyus flex flex-nowrap overflow-x-auto overflow-y-hidden justify-start lg:justify-between items-center space-x-6 lg:space-x-12 ">
             {/* Convenient Payment Options */}
             <div className="flex-shrink-0 flex flex-col items-center overflow-hidden">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import fd from "/harshit study/google/bank/zoomfinance/ZOOMFIN-master/src/images/fd.jpg" 
 function FixedDepositLoanForm() {
   const [agree, setAgree] = useState(false);
   const handleTermsAndCondition = () => {
@@ -122,9 +122,9 @@ function FixedDepositLoanForm() {
         <div class="bg-white shadow-lg rounded-lg py-6 px-3 lg:px-20">
           <div class="flex flex-col lg:flex-row items-center lg:space-x-10">
             {/* <!-- Image Section --> */}
-            <div data-aos="fade-right" class="mb-6 lg:mb-0">
+            <div data-aos="fade-right" class="w-full lg:w-60 lg:h-58 mb-6 lg:mb-0">
               <img
-                src="https://cdn.zeebiz.com/sites/default/files/2023/06/10/246589-news18-bl-zb.jpg"
+                src={fd}
                 alt="Fixed Deposit"
                 class="w-full lg:w-96 rounded-lg shadow-md"
               />
@@ -151,7 +151,7 @@ function FixedDepositLoanForm() {
                 ability to take a loan against your fixed deposit.
               </p>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSehvyCYrY7Zqxy0Os5SuZPUNHr0ppiFL3cNiVJzDZ6pt6cIug/viewform?usp=sf_link"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSehff_2kFrBZ3LTFfSU1Pp8DyHK9P53qa4jYCtigPWrzA6wJg/viewform?usp=sf_link"
                 className="bg-blue-400 hover:bg-white hover:text-blue-500 border hover:border-blue-500 duration-500 text-white px-4 py-2 rounded-sm mt-5 w-full lg:w-28"
               >Apply Now
               

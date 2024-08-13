@@ -57,7 +57,7 @@ function AboutUs() {
               Our Leaders
             </h2>
             <h3 className="text-xl font-semibold text-gray-600 mb-4 ">
-              RAJIV CHAUHAN - CHAIRMAN
+              RAJEEV CHOUHAN - CHAIRMAN
             </h3>
             <p className="text-gray-700 mb-4">
               Rajiv Chauhan has been leading our company with a vision to
@@ -79,7 +79,7 @@ function AboutUs() {
             <h4 className="text-lg font-semibold text-gray-700 mt-2">CEO</h4>
             <p className="text-gray-700">KHILESH JHARIYA</p>
             <h4 className="text-lg font-semibold text-gray-700 mt-2">MD</h4>
-            <p className="text-gray-700">PUJA KHANDELWAL</p>
+            <p className="text-gray-700">POOJA KHANDELWAL</p>
           </div>
           <div data-aos="fade-left" className="w-full lg:w-[35%] flex flex-col gap-3 overflofade-left">
             <div className=" rounded-full border-2 border-blue-200 shadow-lg object-cover object-center ">
@@ -90,7 +90,7 @@ function AboutUs() {
               />
             </div>
             <h3 className="text-xl font-semibold text-gray-600 mb-4 text-center">
-              RAJIV CHAUHAN
+              RAJEEV CHOUHAN
             </h3>
           </div>
         </div>

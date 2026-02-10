@@ -20,33 +20,59 @@ function SideBar({ setShow }) {
   return (
     <div
       data-aos="fade-left"
-      className="w-[80%] h-screen lg:hidden bg-blue-100 z-50 fixed top-0 right-0 shadow-lg shadow-black rounded-b-lg"
+      className="
+        w-[80%] h-screen lg:hidden
+        fixed top-0 right-0 z-50
+        bg-blue-100/80 backdrop-blur-md
+        shadow-lg shadow-black
+        rounded-b-lg
+      "
     >
+      {/* Close button */}
       <button
         onClick={handleClose}
-        className="px-6 py-5 text-red-500 font-extrabold text-2xl"
+        className="
+          absolute top-4 right-4
+          text-red-600 font-extrabold text-2xl
+          hover:scale-110 transition
+        "
       >
-        X
+        ✕
       </button>
 
-      <ul className="list-none flex flex-col gap-5 justify-center px-6 mt-[20%] font-bold">
-        <li className="flex items-center gap-3" onClick={() => handleNavigate('/')}>
+      <ul className="list-none flex flex-col gap-6 justify-center px-6 mt-[30%] font-bold text-lg">
+        <li
+          className="flex items-center gap-3 cursor-pointer hover:text-blue-700 transition"
+          onClick={() => handleNavigate('/')}
+        >
           <FaHome /> Home
         </li>
 
-        <li className="flex items-center gap-3" onClick={() => handleNavigate('/aboutus')}>
+        <li
+          className="flex items-center gap-3 cursor-pointer hover:text-blue-700 transition"
+          onClick={() => handleNavigate('/aboutus')}
+        >
           <MdPeopleAlt /> About Us
         </li>
 
-        <li className="flex items-center gap-3" onClick={() => handleNavigate('/FormSubmission')}>
+        <li
+          className="flex items-center gap-3 cursor-pointer hover:text-blue-700 transition"
+          onClick={() => handleNavigate('/FormSubmission')}
+        >
           <FaFileWaveform /> Form Submission
         </li>
 
-        <li className="flex items-center gap-3" onClick={() => handleNavigate('/FDInfo')}>
+        <li
+          className="flex items-center gap-3 cursor-pointer hover:text-blue-700 transition"
+          onClick={() => handleNavigate('/FDInfo')}
+        >
           <FaFileWaveform /> Fixed Deposit
         </li>
 
-        <li className="flex items-center gap-3" onClick={() => handleNavigate('/contactus')}>
+        <li
+          className="flex items-center gap-3 cursor-pointer hover:text-blue-700 transition"
+          onClick={() => handleNavigate('/contactus')}
+        >
           <MdOutlinePermContactCalendar /> Contact Us
         </li>
       </ul>

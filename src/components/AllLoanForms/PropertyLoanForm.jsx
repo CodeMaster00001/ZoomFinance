@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import property from "/harshit study/google/bank/zoomfinance/ZOOMFIN-master/src/images/property.webp"
+import property from "@/images/property.webp"
 function PropertyLoanForm() {
   const [agree, setAgree] = useState(false);
   const handleTermsAndCondition = () => {

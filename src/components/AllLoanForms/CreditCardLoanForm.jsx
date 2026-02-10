@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import credit from "/harshit study/google/bank/zoomfinance/ZOOMFIN-master/src/images/credit.jpg"
+import credit from "@/images/credit.jpg"
 
 function CreditCardLoanForm() {
   const [agree, setAgree] = useState(false);

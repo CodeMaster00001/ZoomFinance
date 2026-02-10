@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import home from "/harshit study/google/bank/zoomfinance/ZOOMFIN-master/src/images/home.jpg"
+import home from "@/images/home.jpg"
 function HomeLoanForm() {
   const navigate = useNavigate()
   const [agree, setAgree] = useState(false);

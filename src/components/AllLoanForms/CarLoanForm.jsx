@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import CarLoan from "/harshit study/google/bank/zoomfinance/ZOOMFIN-master/src/images/CarLoan.webp"
+import CarLoan from "@/images/CarLoan.webp"
 
 
 function CarLoanForm() {

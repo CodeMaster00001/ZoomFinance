@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import goldloan from "/harshit study/google/bank/zoomfinance/ZOOMFIN-master/src/images/GoldLoan.webp"
+// import goldloan from "/harshit study/google/bank/zoomfinance/ZOOMFIN-master/src/images/GoldLoan.webp"
+// import goldloan from "../images/GoldLoan.webp";
+import goldloan from "@/images/GoldLoan.webp"
 
 function GoldLoanForm() {
   const [agree, setAgree] = useState(false);

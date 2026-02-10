@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import fd from "/harshit study/google/bank/zoomfinance/ZOOMFIN-master/src/images/fd.jpg" 
+import fd from "@/images/fd.jpg" 
 function FixedDepositLoanForm() {
   const [agree, setAgree] = useState(false);
   const handleTermsAndCondition = () => {
